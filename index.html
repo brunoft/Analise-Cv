@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Funcionamento Análise Cv</title>
+    <!-- Adjust Screen -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Roboto Font  -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+      body{
+      background-color:#fafafa;
+      padding:0;
+      margin:0;
+      font-family:'Roboto', sans-serif;
+      min-height:100vh;
+      }
+      h1{
+        margin: 0;
+        padding: 0;
+      }
+      h2{
+        margin: 0;
+        padding: 0;
+      }
+      h4{
+        margin: 0;
+        padding: 0;
+      }
+
+      h3{
+        margin: 0;
+        padding: 0;
+      }
+      /* HEADER */
+      .background-header{
+        background: #00569f;
+        background: linear-gradient(180deg, #00569f, #03acd7 );
+        /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(251,255,41,1); */
+        height: 40vh;
+      }
+
+      .main-header{
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .box-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 40vh;
+      }
+
+      .text-header{
+        color: white;
+        font-weight: 400;
+      }
+
+      .botton-header{
+        margin-top: 16px;
+
+      }
+
+      .botton-header .btn{
+        text-transform: uppercase;
+      }
+
+      .btn-funciona{
+        margin-right: 8px;
+
+      }
+
+      .btn-contratar{
+
+      }
+      /* MAIN */
+      .main-title{
+        text-align: center;
+        color: #00569f;
+        margin-top: 16px;
+      }
+
+      .box-numbers{
+        display: flex;
+        background-color: #e5e5e5;
+        position:relative;
+        margin-top: 64px;
+        height: 100px;
+        align-items: center;
+
+      }
+
+      .subtitle-left{
+        width: 70%;
+        margin-right: 200px;
+        margin-left: 64px;
+
+      }
+      .subtitle-left h4{
+        font-size: 1em;
+
+      }
+
+      .subtitle-right{
+        width: 70%;
+        margin-left: 200px;
+
+
+      }
+      .subtitle-right h4{
+        font-size: 1em;
+
+      }
+
+      .number-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00569f;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        height: 140px;
+        width: 140px;
+      }
+
+      .number-1 h1{
+        color: white;
+        font-size: 6em;
+      }
+
+      .number-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00569f;
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        height: 140px;
+        width: 140px;
+      }
+
+      .number-2 h1{
+        color: white;
+        font-size: 6em;
+      }
+      .number-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00569f;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        height: 140px;
+        width: 140px;
+      }
+      .number-3 h1{
+        color: white;
+        font-size: 6em;
+      }
+
+      /* ALTERAÇÕES SUGERIDAS */
+
+      .alteracao{
+        background-color: #e5e5e5;
+        margin-top: 128px;
+      }
+
+      .content-alteracao{
+        position: relative;
+      }
+      .number-4 h1{
+        color: white;
+        font-size: 6em;
+      }
+      .number-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00569f;
+        position: absolute;
+        top: -70px;
+        left: 45%;
+        height: 140px;
+        width: 140px;
+      }
+
+      .box-title-subtitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .title{
+        width: 50%;
+        margin-top: 94px;
+
+      }
+
+      .subtitle{
+        width: 80%;
+      }
+
+      .subtitle h4{
+        font-size: 1em;
+        font-weight: 400;
+      }
+      .box-checked{
+        display: flex;
+        align-items: center;
+        margin-top: 64px;
+        margin-bottom: 32px;
+      }
+
+      .glyphicon{
+        font-size: 6em;
+        color: #1ca404;
+        margin-bottom: 16px;
+      }
+
+      .text{
+        width: 70%;
+        text-align: center;
+      }
+
+      .checked{
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* QUERO CONTRATAR */
+      .quero-contratar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+
+      .quero-contratar .box-title-subtitle .title{
+        margin-top: 64px!important;
+      }
+
+      .box-taxa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #00569f;
+        width: 45%;
+        margin-top: 32px;
+        align-self: center;
+        color: white;
+      }
+
+      .teste{
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        width: 40%;
+
+      }
+
+      .text-apenas{
+        align-self: flex-start;
+      }
+
+      .text-apenas h4 {
+        font-size: 1em;
+      }
+
+      .valor{
+        display: flex;
+        align-self: center;
+        margin-top: 4px;
+      }
+
+      .valor h1{
+        font-size: 4em;
+      }
+
+      .text-taxa{
+        align-self: flex-end;
+      }
+      .text-taxa h4{
+        font-size: 1em;
+      }
+
+      .text-content-box{
+        color: white;
+        width: 60%;
+        margin-top: 16px;
+        text-align: center;
+      }
+      .text-content-box h4{
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+
+      .btn-comecar{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+
+      .btn-comecar .btn{
+        background-color: #1ca404;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .btn-comecar .btn-default{
+        border-color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+  <header>
+    <section class="background-header">
+      <div class="container main-header">
+        <div class="box-header">
+          <div class="text-header">
+            <strong>Deixe seu currículo impecável</strong> para encantar as empresas que estão contratando, com a ajuda de um<strong> Analista de Carreiras</strong>
+          </div>
+          <div class="botton-header">
+            <button  type="button"class="btn btn-default btn-funciona">como funciona</button>
+            <button  type="button" class="btn btn-default btn-contratar">quero contratar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- Funcionamento da Análise de Currículos -->
+    <section>
+      <div class="container">
+        <div class="main-title">
+          <h4>Veja como funciona a Análise de Currículo</h4>
+        </div>
+        <div class="box-numbers">
+          <div class="subtitle-right">
+            <h4>Após a contratação, o <strong>Analista de Carreiras designado para ajudar você</strong> receberá a solicitação. </h4>
+          </div>
+          <div class="number-1">
+            <h1>1</h1>
+          </div>
+        </div>
+        <div class="box-numbers">
+          <div class="subtitle-left">
+            <h4><strong>Em até 3 dias ele deve emitir um laudo curricular</strong> que você receberá por email com todos
+              os pontos que devem ser aprimorados, enfatizados ou emitidos, visando maior retorno
+              por parte das empresas.<a>Clique aqui e veja um exemplo de laudo.</a>
+            </h4>
+          </div>
+          <div class="number-2">
+            <h1>2</h1>
+          </div>
+        </div>
+        <div class="box-numbers">
+          <div class="subtitle-right">
+            <h4>Você receberá também um<strong> Relatório salarial de Mercado</strong> para que possa verificar o salário médio de sua função e se necessário fazer ajustes em sua pretensão salarial.</h4>
+          </div>
+          <div class="number-3">
+            <h1>3</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ALTERAÇÕES SUGERIDAS -->
+    <section class="alteracao">
+      <div class="container content-alteracao">
+        <div class="number-4">
+          <h1>4</h1>
+        </div>
+        <div class="box-title-subtitle">
+          <div class="title">
+            <h3><strong>Faça as alterações sugeridas e pronto!</strong></h3>
+          </div>
+          <div class="subtitle">
+            <h4>Seu currículo está preparado para concorrer e se destacar nos processos seletivos.</h4>
+          </div>
+        </div>
+        <div class="box-checked">
+          <div class="checked">
+            <div class="glyphicon glyphicon-ok-circle"></div>
+            <div class="text">
+              <h4><strong>Aumente até 50%</strong> suas chances de recolocação</h4>
+            </div>
+          </div>
+          <div class="checked">
+            <div class="glyphicon glyphicon-ok-circle"></div>
+            <div class="text">
+              <h4>Receba<strong> mais convites para entrevista</strong></h4>
+            </div>
+          </div>
+          <div class="checked">
+            <div class="glyphicon glyphicon-ok-circle"></div>
+            <div class="text">
+              <h4><strong>Seu currículo ainda mais acessado</strong> pelas empresas</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- QUERO CONTRATAR -->
+    <section>
+      <div class="container quero-contratar">
+        <div class="box-title-subtitle">
+          <div class="title">
+            <h3><strong>Quero contrar, quanto custa?</strong></h3>
+          </div>
+          <div class="subtitle">
+            <h4>Investimnto único, sem assinaturas ou recorrências.</h4>
+          </div>
+        </div>
+        <div class="box-taxa">
+          <div class="teste">
+            <div class="text-apenas">
+              <h4>APENAS</h4>
+            </div>
+            <div class="valor">
+              <h4>R$</h4>
+              <h1>29</h1>
+              <h4>,90</h4>
+            </div>
+            <div class="text-taxa">
+              <h4>TAXA ÚNICA</h4>
+            </div>
+          </div>
+          <div class="text-content-box">
+            <h4>Não perca tempo, essa análise pode ser o que falta para sua carreira decolar!</h4>
+          </div>
+        </div>
+        <div class="btn-comecar">
+          <button  type="button"class="btn btn-default btn-funciona">começar agora</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
