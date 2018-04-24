@@ -20,30 +20,24 @@
       margin:0;
       font-family:'Roboto', sans-serif;
       min-height:100vh;
+      color: inherit;
       }
-      h1{
-        margin: 0;
-        padding: 0;
-      }
-      h2{
-        margin: 0;
-        padding: 0;
-      }
-      h4{
+      h1, h2, h3, h4{
         margin: 0;
         padding: 0;
       }
 
-      h3{
-        margin: 0;
-        padding: 0;
+      a{
+        text-decoration: none!important;
+        cursor: pointer!important;
       }
+
       /* HEADER */
       .background-header{
         background: #00569f;
         background: linear-gradient(180deg, #00569f, #03acd7 );
         /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(251,255,41,1); */
-        height: 40vh;
+
       }
 
       .main-header{
@@ -61,33 +55,47 @@
 
       .text-header{
         color: white;
-        font-weight: 400;
+        font-weight: 300;
+        font-size: 20px;
       }
 
-      .botton-header{
+      .button-header{
         margin-top: 16px;
 
       }
 
-      .botton-header .btn{
+      .button-header .btn{
         text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+        background-color: #00569f;
+        border-color: white;
+        min-width: 30%;
+        max-width: 50%
       }
 
-      .btn-funciona{
+      .button-header .btn:hover{
+        background-color: #00569f;
+        border-color: white;
+        color: white;
+      }
+
+       .btn-it-works{
         margin-right: 8px;
-
+        background-color: #03aae1!important;
+        border-color: #03aae1!important;
       }
 
-      .btn-contratar{
-
-      }
-      /* MAIN */
+      /* ANÁLISE DE CURRÍCULO */
       .main-title{
         text-align: center;
         color: #00569f;
         margin-top: 16px;
-      }
+        }
 
+      .main-title h3{
+        font-weight: 700;
+      }
       .box-numbers{
         display: flex;
         background-color: #e5e5e5;
@@ -102,22 +110,21 @@
         width: 70%;
         margin-right: 200px;
         margin-left: 64px;
-
       }
+
       .subtitle-left h4{
         font-size: 1em;
-
+        font-weight: 400;
       }
 
       .subtitle-right{
         width: 70%;
         margin-left: 200px;
-
-
       }
+
       .subtitle-right h4{
         font-size: 1em;
-
+        font-weight: 400;
       }
 
       .number-1{
@@ -153,6 +160,7 @@
         color: white;
         font-size: 6em;
       }
+
       .number-3{
         display: flex;
         align-items: center;
@@ -164,25 +172,27 @@
         height: 140px;
         width: 140px;
       }
+
       .number-3 h1{
         color: white;
         font-size: 6em;
       }
 
       /* ALTERAÇÕES SUGERIDAS */
-
-      .alteracao{
+      .change{
         background-color: #e5e5e5;
         margin-top: 128px;
       }
 
-      .content-alteracao{
+      .content-change{
         position: relative;
       }
+
       .number-4 h1{
         color: white;
         font-size: 6em;
       }
+
       .number-4{
         display: flex;
         align-items: center;
@@ -205,7 +215,6 @@
       .title{
         width: 50%;
         margin-top: 94px;
-
       }
 
       .subtitle{
@@ -216,6 +225,7 @@
         font-size: 1em;
         font-weight: 400;
       }
+
       .box-checked{
         display: flex;
         align-items: center;
@@ -227,11 +237,17 @@
         font-size: 6em;
         color: #1ca404;
         margin-bottom: 16px;
+        font-weight:
       }
 
-      .text{
+      .text-checked{
         width: 70%;
         text-align: center;
+      }
+
+      .text-checked h4{
+        font-size: 1em;
+        font-weight: 400;
       }
 
       .checked{
@@ -246,14 +262,13 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-
       }
 
       .quero-contratar .box-title-subtitle .title{
         margin-top: 64px!important;
       }
 
-      .box-taxa{
+      .box-blue{
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -264,36 +279,36 @@
         color: white;
       }
 
-      .teste{
+      .taxa{
         display: flex;
         flex-direction: column;
         margin-top: 32px;
         width: 40%;
-
       }
 
       .text-apenas{
         align-self: flex-start;
       }
 
-      .text-apenas h4 {
+      .text-left h4 {
         font-size: 1em;
       }
 
-      .valor{
+      .value{
         display: flex;
         align-self: center;
         margin-top: 4px;
       }
 
-      .valor h1{
+      .value h1{
         font-size: 4em;
       }
 
-      .text-taxa{
+      .text-right{
         align-self: flex-end;
       }
-      .text-taxa h4{
+
+      .text-right h4{
         font-size: 1em;
       }
 
@@ -303,28 +318,33 @@
         margin-top: 16px;
         text-align: center;
       }
+
       .text-content-box h4{
         font-size: 1em;
         font-weight: 400;
         margin-bottom: 16px;
       }
 
-      .btn-comecar{
+      .btn-begin{
         display: flex;
         justify-content: center;
         margin-top: 32px;
         margin-bottom: 32px;
       }
 
-      .btn-comecar .btn{
-        background-color: #1ca404;
+      .btn-begin .btn{
+        background-color: #1ca404!important;
         color: white;
         text-transform: uppercase;
+        padding: 4px 32px;
+        font-weight: 700;
+        border-color: #1ca404!important;
       }
 
-      .btn-comecar .btn-default{
-        border-color: inherit;
+      .btn-begin .btn:hover{
+        color: white!important;
       }
+
     </style>
   </head>
   <body>
@@ -335,19 +355,19 @@
           <div class="text-header">
             <strong>Deixe seu currículo impecável</strong> para encantar as empresas que estão contratando, com a ajuda de um<strong> Analista de Carreiras</strong>
           </div>
-          <div class="botton-header">
-            <button  type="button"class="btn btn-default btn-funciona">como funciona</button>
-            <button  type="button" class="btn btn-default btn-contratar">quero contratar</button>
+          <div class="button-header">
+            <button  type="button"class="btn btn-default btn-it-works">como funciona</button>
+            <button  type="button" class="btn btn-default btn-to-hire">quero contratar</button>
           </div>
         </div>
       </div>
     </section>
   </header>
-  <!-- Funcionamento da Análise de Currículos -->
+    <!-- FUNCIONAMENTO DA ANÁLISE DE CURRÍCULOS -->
     <section>
       <div class="container">
         <div class="main-title">
-          <h4>Veja como funciona a Análise de Currículo</h4>
+          <h3>Veja como funciona a Análise de Currículo</h3>
         </div>
         <div class="box-numbers">
           <div class="subtitle-right">
@@ -379,8 +399,8 @@
       </div>
     </section>
     <!-- ALTERAÇÕES SUGERIDAS -->
-    <section class="alteracao">
-      <div class="container content-alteracao">
+    <section class="change">
+      <div class="container content-change">
         <div class="number-4">
           <h1>4</h1>
         </div>
@@ -395,19 +415,19 @@
         <div class="box-checked">
           <div class="checked">
             <div class="glyphicon glyphicon-ok-circle"></div>
-            <div class="text">
+            <div class="text-checked">
               <h4><strong>Aumente até 50%</strong> suas chances de recolocação</h4>
             </div>
           </div>
           <div class="checked">
             <div class="glyphicon glyphicon-ok-circle"></div>
-            <div class="text">
+            <div class="text-checked">
               <h4>Receba<strong> mais convites para entrevista</strong></h4>
             </div>
           </div>
           <div class="checked">
             <div class="glyphicon glyphicon-ok-circle"></div>
-            <div class="text">
+            <div class="text-checked">
               <h4><strong>Seu currículo ainda mais acessado</strong> pelas empresas</h4>
             </div>
           </div>
@@ -425,17 +445,17 @@
             <h4>Investimnto único, sem assinaturas ou recorrências.</h4>
           </div>
         </div>
-        <div class="box-taxa">
-          <div class="teste">
-            <div class="text-apenas">
+        <div class="box-blue">
+          <div class="taxa">
+            <div class="text-left">
               <h4>APENAS</h4>
             </div>
-            <div class="valor">
+            <div class="value">
               <h4>R$</h4>
               <h1>29</h1>
               <h4>,90</h4>
             </div>
-            <div class="text-taxa">
+            <div class="text-right">
               <h4>TAXA ÚNICA</h4>
             </div>
           </div>
@@ -443,8 +463,8 @@
             <h4>Não perca tempo, essa análise pode ser o que falta para sua carreira decolar!</h4>
           </div>
         </div>
-        <div class="btn-comecar">
-          <button  type="button"class="btn btn-default btn-funciona">começar agora</button>
+        <div class="btn-begin">
+          <button  type="button"class="btn btn-default btn-funciona">começar agora!</button>
         </div>
       </div>
     </section>
