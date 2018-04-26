@@ -11,8 +11,6 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
       body{
       background-color:#fafafa;
@@ -33,224 +31,191 @@
       }
 
       /* HEADER */
-      .background-header{
+      .analise-cv-lp .background-header{
         background: #00569f;
-        background: linear-gradient(180deg, #00569f, #03acd7 );
+
         /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(251,255,41,1); */
 
       }
 
-      .main-header{
+      .analise-cv-lp .img-background{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('img/banner-landing-analise-cv.png');
+      }
+
+      .analise-cv-lp .main-header{
         display: flex;
         justify-content: flex-end;
       }
 
-      .box-header{
+      .analise-cv-lp .box-header{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        height: 40vh;
+        margin: 64px 0px;
       }
 
-      .text-header{
+      .analise-cv-lp .text-header{
         color: white;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 20px;
       }
 
-      .button-header{
+      .analise-cv-lp .button-header{
         margin-top: 16px;
 
       }
 
-      .button-header .btn{
+      .analise-cv-lp .button-header .btn{
         text-transform: uppercase;
         color: white;
         font-weight: 500;
         background-color: #00569f;
         border-color: white;
-        min-width: 30%;
-        max-width: 50%
+        white-space: inherit!important;
+        max-width: 70%;
+        min-width:30%;
+        border-radius: 8px;
       }
 
-      .button-header .btn:hover{
+      .analise-cv-lp .button-header .btn:hover{
         background-color: #00569f;
         border-color: white;
         color: white;
       }
 
-       .btn-it-works{
+      .analise-cv-lp .btn-it-works{
         margin-right: 8px;
         background-color: #03aae1!important;
         border-color: #03aae1!important;
       }
 
-      /* ANÁLISE DE CURRÍCULO */
-      .main-title{
+
+      /* FUNCIONAMENTO ANÁLISE DE CURRÍCULO */
+
+      .analise-cv-lp .review-resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      .analise-cv-lp .main-title{
         text-align: center;
         color: #00569f;
-        margin-top: 16px;
+        margin-top: 32px;
         }
 
-      .main-title h3{
+      .analise-cv-lp .main-title h3{
         font-weight: 700;
       }
-      .box-numbers{
+
+      .analise-cv-lp .box-numbers{
         display: flex;
         background-color: #e5e5e5;
-        position:relative;
         margin-top: 64px;
-        height: 100px;
         align-items: center;
-
+        min-width: 100%;
+        padding: 32px;
       }
 
-      .subtitle-left{
-        width: 70%;
-        margin-right: 200px;
-        margin-left: 64px;
+      .analise-cv-lp .subtitle{
+        margin-left: 32px;
       }
 
-      .subtitle-left h4{
-        font-size: 1em;
-        font-weight: 400;
-      }
 
-      .subtitle-right{
-        width: 70%;
-        margin-left: 200px;
-      }
-
-      .subtitle-right h4{
-        font-size: 1em;
-        font-weight: 400;
-      }
-
-      .number-1{
+      .analise-cv-lp .number{
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #00569f;
-        position: absolute;
-        top: -20px;
-        left: 20px;
-        height: 140px;
-        width: 140px;
+        height:50px;
+        width: 50px;
+        min-width:5.71%;
+
       }
 
-      .number-1 h1{
+      .analise-cv-lp .number h4{
         color: white;
-        font-size: 6em;
+        font-size: 2em;
       }
 
-      .number-2{
+      .analise-cv-lp .content-change .number{
+        margin: 32px 0px;
+      }
+
+      .analise-cv-lp .exampleLaudo{
+        margin-top: 64px;
+        max-width: 20%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        background-color: #00569f;
-        position: absolute;
-        top: -20px;
-        right: 20px;
-        height: 140px;
-        width: 140px;
+        text-align: center;
+        color: #00569f;
+
       }
 
-      .number-2 h1{
-        color: white;
-        font-size: 6em;
+      .analise-cv-lp .exampleLaudo img{
+        width: 110px;
+        height: 116px;
       }
 
-      .number-3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #00569f;
-        position: absolute;
-        top: -20px;
-        left: 20px;
-        height: 140px;
-        width: 140px;
-      }
-
-      .number-3 h1{
-        color: white;
-        font-size: 6em;
+      .analise-cv-lp .exampleLaudo h4{
+        font-weight: 700;
       }
 
       /* ALTERAÇÕES SUGERIDAS */
-      .change{
+      .analise-cv-lp .change{
         background-color: #e5e5e5;
         margin-top: 128px;
       }
 
-      .content-change{
-        position: relative;
-      }
-
-      .number-4 h1{
-        color: white;
-        font-size: 6em;
-      }
-
-      .number-4{
+      .analise-cv-lp .content-change{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        background-color: #00569f;
-        position: absolute;
-        top: -70px;
-        left: 45%;
-        height: 140px;
-        width: 140px;
+
       }
 
-      .box-title-subtitle{
+      .analise-cv-lp .box-title-subtitle{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
 
-      .title{
-        width: 50%;
-        margin-top: 94px;
-      }
-
-      .subtitle{
-        width: 80%;
-      }
-
-      .subtitle h4{
+      .analise-cv-lp .subtitle h4{
         font-size: 1em;
         font-weight: 400;
+        line-height: 1.3;
       }
 
-      .box-checked{
+      .analise-cv-lp .box-checked{
         display: flex;
         align-items: center;
         margin-top: 64px;
         margin-bottom: 32px;
       }
 
-      .glyphicon{
+      .analise-cv-lp .glyphicon{
         font-size: 6em;
         color: #1ca404;
         margin-bottom: 16px;
         font-weight:
       }
 
-      .text-checked{
+      .analise-cv-lp .text-checked{
         width: 70%;
         text-align: center;
       }
 
-      .text-checked h4{
+      .analise-cv-lp .text-checked h4{
         font-size: 1em;
         font-weight: 400;
       }
 
-      .checked{
+      .analise-cv-lp .checked{
         width: 33.3%;
         display: flex;
         flex-direction: column;
@@ -258,215 +223,297 @@
       }
 
       /* QUERO CONTRATAR */
-      .quero-contratar{
+      .analise-cv-lp .to-hire{
         display: flex;
         justify-content: center;
         flex-direction: column;
       }
 
-      .quero-contratar .box-title-subtitle .title{
+      .analise-cv-lp .to-hire .box-title-subtitle .title{
         margin-top: 64px!important;
       }
 
-      .box-blue{
+      .analise-cv-lp .box-blue{
         display: flex;
         align-items: center;
         flex-direction: column;
+        text-align: center;
         background-color: #00569f;
-        width: 45%;
+        width: 35%;
         margin-top: 32px;
         align-self: center;
         color: white;
       }
 
-      .taxa{
+      .analise-cv-lp .taxa{
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 32px;
         width: 40%;
       }
 
-      .text-apenas{
-        align-self: flex-start;
+      .analise-cv-lp .text h4{
+        font-weight: 400;
+        line-height: 1.3;
+      }
+      .analise-cv-lp .text h3{
+        font-size: 18px;
+        line-height: 1.3;
       }
 
-      .text-left h4 {
-        font-size: 1em;
-      }
-
-      .value{
+      .analise-cv-lp .value{
         display: flex;
         align-self: center;
         margin-top: 4px;
       }
 
-      .value h1{
-        font-size: 4em;
+      .analise-cv-lp .value h1{
+        font-size: 5em;
       }
 
-      .text-right{
-        align-self: flex-end;
+      .analise-cv-lp .box-text-taxa-unica{
+        background-color: #03aae1;
+        width: 80%;
+        padding: 8px;
       }
 
-      .text-right h4{
-        font-size: 1em;
-      }
-
-      .text-content-box{
+      .analise-cv-lp .text-content-box{
         color: white;
         width: 60%;
         margin-top: 16px;
         text-align: center;
       }
 
-      .text-content-box h4{
+      .analise-cv-lp .text-content-box h4{
         font-size: 1em;
-        font-weight: 400;
+        font-weight: 300;
         margin-bottom: 16px;
       }
 
-      .btn-begin{
+      .analise-cv-lp .btn-begin{
         display: flex;
         justify-content: center;
         margin-top: 32px;
         margin-bottom: 32px;
       }
 
-      .btn-begin .btn{
+      .analise-cv-lp .btn-begin .btn{
         background-color: #1ca404!important;
         color: white;
         text-transform: uppercase;
-        padding: 4px 32px;
+        padding: 8px 64px;
         font-weight: 700;
         border-color: #1ca404!important;
       }
 
-      .btn-begin .btn:hover{
+      .analise-cv-lp .btn-begin .btn:hover{
         color: white!important;
       }
 
+      /* 599 */
+      @media screen  and (max-width: 599px){
+        .analise-cv-lp .background-header{
+          background: linear-gradient(#00569f, #03acd7)!important;
+
+        }
+
+        .analise-cv-lp .img-background{
+            background-image: none;
+        }
+
+        .analise-cv-lp .main-header{
+          justify-content: center;
+        }
+
+        .analise-cv-lp .box-header{
+          width: 100%;
+          align-items: center;
+          text-align: center;
+        }
+
+        .analise-cv-lp .button-header .btn{
+          margin-bottom: 8px;
+          min-width: 100%;
+        }
+
+        .analise-cv-lp .btn-it-works{
+          margin: 0;
+        }
+
+          /* FUNCIONAMENTO DA ANÁLISE DE CURRÍCULOS */
+        .analise-cv-lp .box-numbers{
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .analise-cv-lp .subtitle{
+          margin-left: 0px;
+          margin-top: 32px;
+        }
+
+        .analise-cv-lp .exampleLaudo{
+          max-width: 100%;
+
+        }
+
+         /* ALTERAÇÕES SUGERIDAS  */
+         .analise-cv-lp .box-checked{
+          display: flex;
+          flex-direction: column;
+          margin:0px;
+          margin-bottom: 32px;
+        }
+
+         .analise-cv-lp .checked{
+          width: 100%;
+          margin-top: 32px;
+
+        }
+
+        /* QUERO ADQUIRIR MINHA ANÁLISE DE CURRÍCULO */
+         .analise-cv-lp .box-blue{
+          width: 100%;
+        }
+
+         .analise-cv-lp .taxa{
+          width: 100%;
+        }
+
+      }
     </style>
   </head>
   <body>
-  <header>
-    <section class="background-header">
-      <div class="container main-header">
-        <div class="box-header">
-          <div class="text-header">
-            <strong>Deixe seu currículo impecável</strong> para encantar as empresas que estão contratando, com a ajuda de um<strong> Analista de Carreiras</strong>
+    <section class="analise-cv-lp">
+      <header>
+        <!-- HEADER -->
+        <section class="background-header img-background" >
+          <div class="container main-header">
+            <div class="box-header">
+              <div class="text-header">
+                <strong>Deixe seu currículo impecável</strong> para encantar as empresas que estão contratando, com a ajuda de um<strong> Analista de Carreiras</strong>
+              </div>
+              <div class="button-header">
+                <button  type="button"class="btn btn-default btn-it-works">como funciona</button>
+                <button  type="button" class="btn btn-default btn-how-to-acquire">como adquirir</button>
+              </div>
+            </div>
           </div>
-          <div class="button-header">
-            <button  type="button"class="btn btn-default btn-it-works">como funciona</button>
-            <button  type="button" class="btn btn-default btn-to-hire">quero contratar</button>
+        </section>
+      </header>
+      <!-- FUNCIONAMENTO DA ANÁLISE DE CURRÍCULOS -->
+      <section>
+        <div class="container review-resume">
+          <div class="main-title">
+            <h3>Veja como funciona a Análise de Currículo</h3>
+          </div>
+          <div class="box-numbers">
+            <div class="number">
+              <h4>1</h4>
+            </div>
+            <div class="subtitle">
+              <h4>Teremos um<strong> Analista de Carreiras designado para ajudar você.</strong></h4>
+            </div>
+          </div>
+          <div class="box-numbers">
+            <div class="number">
+              <h4>2</h4>
+            </div>
+            <div class="subtitle">
+              <h4><strong>Em até 3 dias seu analista emitirá um laudo curricular</strong> com os pontos que devem ser aprimorados,
+                ou enfatizados, visando maior atratividade em seu currículo, e mais chances de ser visto pelas empresas.
+              </h4>
+            </div>
+          </div>
+          <div class="exampleLaudo">
+              <img src="img/analise-modelo.jpg" alt="">
+              <a target="_blank" href="file:\\/D:\_www\Analise-Cv/LaudoAdriana.pdf"><h4>Clique aqui e veja um exemplo de laudo.</h4></a>
+          </div>
+          <div class="box-numbers">
+            <div class="number">
+              <h4>3</h4>
+            </div>
+            <div class="subtitle">
+              <h4>Você receberá também um<strong> Relatório salarial de Mercado</strong> para que possa verificar o salário médio de sua função e se necessário fazer ajustes em sua pretensão salarial.</h4>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- ALTERAÇÕES SUGERIDAS -->
+      <section class="change">
+        <div class="container content-change">
+          <div class="number">
+            <h4>4</h4>
+          </div>
+          <div class="box-title-subtitle">
+            <div class="title">
+              <h3><strong>Faça as alterações sugeridas e pronto!</strong></h3>
+            </div>
+            <div class="subtitle">
+              <h4>Seu currículo está preparado para concorrer e se destacar nos processos seletivos.</h4>
+            </div>
+          </div>
+          <div class="box-checked">
+            <div class="checked">
+              <div class="glyphicon glyphicon-ok-circle"></div>
+              <div class="text-checked">
+                <h4><strong>Aumente até 50%</strong> suas chances de recolocação</h4>
+              </div>
+            </div>
+            <div class="checked">
+              <div class="glyphicon glyphicon-ok-circle"></div>
+              <div class="text-checked">
+                <h4>Receba<strong> mais convites para entrevista</strong></h4>
+              </div>
+            </div>
+            <div class="checked">
+              <div class="glyphicon glyphicon-ok-circle"></div>
+              <div class="text-checked">
+                <h4><strong>Seu currículo ainda mais acessado</strong> pelas empresas</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- QUERO ADQUIRIR MINHA ANÁLISE DE CURRÍCULO -->
+      <section>
+        <div class="container to-hire">
+          <div class="box-title-subtitle">
+            <div class="title">
+              <h3><strong>Quero adquirir minha Análise de Currículo</strong></h3>
+            </div>
+            <div class="subtitle">
+              <h4>Investimento único, sem assinaturas ou recorrências.</h4>
+            </div>
+          </div>
+          <div class="box-blue">
+            <div class="taxa">
+              <div class="text">
+                <h4>DE <s>R$59,90</s></h4>
+                <h3>POR APENAS</h3>
+              </div>
+              <div class="value">
+                <h4>R$</h4>
+                <h1>29</h1>
+                <h4>,90</h4>
+              </div>
+              <div class="box-text-taxa-unica">
+                <h4>TAXA ÚNICA</h4>
+              </div>
+            </div>
+            <div class="text-content-box">
+              <h4>Não perca tempo, essa análise pode ser o que falta para sua carreira decolar!</h4>
+            </div>
+          </div>
+          <div class="btn-begin">
+            <button  type="button"class="btn btn-default btn-funciona">começar agora!</button>
+          </div>
+        </div>
+      </section>
     </section>
-  </header>
-    <!-- FUNCIONAMENTO DA ANÁLISE DE CURRÍCULOS -->
-    <section>
-      <div class="container">
-        <div class="main-title">
-          <h3>Veja como funciona a Análise de Currículo</h3>
-        </div>
-        <div class="box-numbers">
-          <div class="subtitle-right">
-            <h4>Após a contratação, o <strong>Analista de Carreiras designado para ajudar você</strong> receberá a solicitação. </h4>
-          </div>
-          <div class="number-1">
-            <h1>1</h1>
-          </div>
-        </div>
-        <div class="box-numbers">
-          <div class="subtitle-left">
-            <h4><strong>Em até 3 dias ele deve emitir um laudo curricular</strong> que você receberá por email com todos
-              os pontos que devem ser aprimorados, enfatizados ou emitidos, visando maior retorno
-              por parte das empresas.<a>Clique aqui e veja um exemplo de laudo.</a>
-            </h4>
-          </div>
-          <div class="number-2">
-            <h1>2</h1>
-          </div>
-        </div>
-        <div class="box-numbers">
-          <div class="subtitle-right">
-            <h4>Você receberá também um<strong> Relatório salarial de Mercado</strong> para que possa verificar o salário médio de sua função e se necessário fazer ajustes em sua pretensão salarial.</h4>
-          </div>
-          <div class="number-3">
-            <h1>3</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ALTERAÇÕES SUGERIDAS -->
-    <section class="change">
-      <div class="container content-change">
-        <div class="number-4">
-          <h1>4</h1>
-        </div>
-        <div class="box-title-subtitle">
-          <div class="title">
-            <h3><strong>Faça as alterações sugeridas e pronto!</strong></h3>
-          </div>
-          <div class="subtitle">
-            <h4>Seu currículo está preparado para concorrer e se destacar nos processos seletivos.</h4>
-          </div>
-        </div>
-        <div class="box-checked">
-          <div class="checked">
-            <div class="glyphicon glyphicon-ok-circle"></div>
-            <div class="text-checked">
-              <h4><strong>Aumente até 50%</strong> suas chances de recolocação</h4>
-            </div>
-          </div>
-          <div class="checked">
-            <div class="glyphicon glyphicon-ok-circle"></div>
-            <div class="text-checked">
-              <h4>Receba<strong> mais convites para entrevista</strong></h4>
-            </div>
-          </div>
-          <div class="checked">
-            <div class="glyphicon glyphicon-ok-circle"></div>
-            <div class="text-checked">
-              <h4><strong>Seu currículo ainda mais acessado</strong> pelas empresas</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- QUERO CONTRATAR -->
-    <section>
-      <div class="container quero-contratar">
-        <div class="box-title-subtitle">
-          <div class="title">
-            <h3><strong>Quero contrar, quanto custa?</strong></h3>
-          </div>
-          <div class="subtitle">
-            <h4>Investimnto único, sem assinaturas ou recorrências.</h4>
-          </div>
-        </div>
-        <div class="box-blue">
-          <div class="taxa">
-            <div class="text-left">
-              <h4>APENAS</h4>
-            </div>
-            <div class="value">
-              <h4>R$</h4>
-              <h1>29</h1>
-              <h4>,90</h4>
-            </div>
-            <div class="text-right">
-              <h4>TAXA ÚNICA</h4>
-            </div>
-          </div>
-          <div class="text-content-box">
-            <h4>Não perca tempo, essa análise pode ser o que falta para sua carreira decolar!</h4>
-          </div>
-        </div>
-        <div class="btn-begin">
-          <button  type="button"class="btn btn-default btn-funciona">começar agora!</button>
-        </div>
-      </div>
-    </section>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
